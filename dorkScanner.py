@@ -64,14 +64,14 @@ options = get_arguments()
 
 banner = ''' 
 
-    ██████╗░░█████╗░██████╗░██╗░░██╗  ░██████╗░█████╗░░█████╗░███╗░░██╗███╗░░██╗███████╗██████╗░
-    ██╔══██╗██╔══██╗██╔══██╗██║░██╔╝  ██╔════╝██╔══██╗██╔══██╗████╗░██║████╗░██║██╔════╝██╔══██╗
-    ██║░░██║██║░░██║██████╔╝█████═╝░  ╚█████╗░██║░░╚═╝███████║██╔██╗██║██╔██╗██║█████╗░░██████╔╝
-    ██║░░██║██║░░██║██╔══██╗██╔═██╗░  ░╚═══██╗██║░░██╗██╔══██║██║╚████║██║╚████║██╔══╝░░██╔══██╗
-    ██████╔╝╚█████╔╝██║░░██║██║░╚██╗  ██████╔╝╚█████╔╝██║░░██║██║░╚███║██║░╚███║███████╗██║░░██║
-    ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝  ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝
+      ___ _____   _____                                              ____                   
+ |_ _|_   _| |_   _|_ _ _ __   __ _  ___ _ __ __ _ _ __   __ _  |  _ \ __ _ _   _  __ _ 
+  | |  | |     | |/ _` | '_ \ / _` |/ _ \ '__/ _` | '_ \ / _` | | |_) / _` | | | |/ _` |
+  | |  | |     | | (_| | | | | (_| |  __/ | | (_| | | | | (_| | |  _ < (_| | |_| | (_| |
+ |___| |_|     |_|\__,_|_| |_|\__, |\___|_|  \__,_|_| |_|\__, | |_| \_\__,_|\__, |\__,_|
+                              |___/                      |___/              |___/       
     
-    Made By: Madhav Mehndiratta (github.com/madhavmehndiratta) 
+    Made By: Sadewa (https://comunitycyber.com) 
 
 '''
 
@@ -79,11 +79,11 @@ banner = '''
 def main():
     print()
     if not options.query:
-        query = input('[?] Enter the Search Query: ')
+        query = input('[?] Masukan dork kamu: ')
     else:
         query = options.query
     if not options.engine:
-        engine = input('[?] Choose the Search Engine (Google/Bing): ')
+        engine = input('[?] Pilih mesin pencari (Google/Bing): ')
     else:
         engine = options.engine
 
@@ -111,7 +111,7 @@ def main():
     search_result(query, engine, pages, processes, result)
 
 
-print(GREEN + banner)
+print(red + banner)
 
 try:
     main()
